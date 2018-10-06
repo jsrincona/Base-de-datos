@@ -1,0 +1,16 @@
+create table if not exists `citas` (
+ `con_fecha` varchar(30) not null comment 'fecha de encuentro',
+ `con_hora` varchar(30) not null comment 'hora de encuentro',
+ `con_lugar` varchar(100) not null comment 'lugar de encuentro',
+ `con_personas` varchar(150) not null comment 'quien se va a reunir',
+ `con_desc` varchar(150) not null comment 'razones del encuentro',
+ primary key (`con_fecha`)
+) engine=innodb comment='tabla de citas';
+
+Johan:
+insert into `citas` (`con_fecha`, `con_hora`, `con_lugar`, `con_personas`, `con_desc`) values ( '11 de octubre', '12:00', 'FloWeed', 'Alex Rodriguez y Vivian Peña', 'Jugar bien relajados');
+insert into `citas` (`con_fecha`, `con_hora`, `con_lugar`, `con_personas`, `con_desc`) values ( '12 de octubre', '8:00', 'Iglesia catedral', 'Alejandro Gonzales y Nicolas Valderrama', 'Rezar por las notas que necesito');
+insert into `citas` (`con_fecha`, `con_hora`, `con_lugar`, `con_personas`, `con_desc`) values ( '13 de octubre', '15:00', 'Parque de la 93', 'Kevin Bernal y Nicolas Gutierrez', 'ver culitos');
+insert into `citas` (`con_fecha`, `con_hora`, `con_lugar`, `con_personas`, `con_desc`) values ( '14 de octubre', '10:00', 'Simon Bolivar', 'Esteban Narato y Jose Diaz', 'Trotar y echarse un picadito');
+insert into `citas` (`con_fecha`, `con_hora`, `con_lugar`, `con_personas`, `con_desc`) values ( '15 de octubre', '20:00', 'Casa de Nicolas', 'Nicolas Gutierrez y Vivian Peña', 'Echar candela UwU');
+
